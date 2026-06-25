@@ -24,3 +24,20 @@
 # "Tarjeta bloqueada por seguridad. Acuda a su banco." y tiras un break para cerrar el juego.
 
 # Si todavía le quedan intentos: Le adviertes cuántos le quedan: f"PIN incorrecto. Te quedan {intentos_pin} intentos."
+
+pin = 5555
+intentos_pin = 3
+
+while True:
+    pin_ingresado = int(input('Ingrese su pin de 4 digitos: '))
+    if pin_ingresado == pin:
+        print('PIN correcto! Retirando el dinero...')
+        print('Dinero retirado con exito!')
+        break
+    else:
+        intentos_pin -= 1
+        if intentos_pin == 0:
+            print('Tarjeta bloqueada por seguridad, Acuda a su banco.')
+            break
+        else:
+            print(f'Pin incorrecto. Te quedan {intentos_pin} intentos')
