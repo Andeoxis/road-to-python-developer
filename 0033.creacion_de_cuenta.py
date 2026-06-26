@@ -76,19 +76,3 @@ elif seleccion == '2' or seleccion == 'crear':
 elif seleccion == 'salir' or seleccion == '3':
     print('Perfecto. Saliendo del sistema, chau.')
     sys.exit()
-
-
-
-
-
-    
-
-
-
-
-
-
-
-        
-
-    
