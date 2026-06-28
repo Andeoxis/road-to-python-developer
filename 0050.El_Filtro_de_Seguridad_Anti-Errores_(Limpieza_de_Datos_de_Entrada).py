@@ -1,6 +1,7 @@
 correcto = 0
 incorrecto = 0
 suma_de_todos_los_pollos = 0
+promedio = 0
 for i in range(1, 5):
     peso = float(input(f'\nIngrese el peso del pollo N {i}: '))
     if 0 < peso < 5:
