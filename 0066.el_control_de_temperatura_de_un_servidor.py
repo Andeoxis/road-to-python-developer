@@ -9,7 +9,7 @@ for i in range(1, 6):
         except ValueError:
             print('ERROR: Solo puedes colocar numeros, intenta de nuevo.')
 
-promedio = promedio / i
+promedio = promedio / 5
 print(f'Promedio = {promedio}')
 if promedio >= 45:
     print(f'ALERTA. El promedio de temperatura es critico. Activando ventiladores de emergencia.')
