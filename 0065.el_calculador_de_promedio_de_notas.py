@@ -3,7 +3,7 @@ promedio = 0
 for i in range(1, 5):
     while True:
         try:
-            notas = int(input('Ingresa tus notas:\n'))
+            notas = int(input(f'Ingresa la nota de la materia {i}:\n'))
             suma_notas += notas
             break
         except ValueError:
