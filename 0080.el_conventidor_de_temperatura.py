@@ -1,7 +1,12 @@
 def celsius_a_fahrenheit(temperatura):
     return (temperatura * 1.8) + 32
-
-temp = float(input('Ingrese la temperatura en celsius: '))
+while True:
+    try:
+        temp = float(input('Ingrese la temperatura en celsius: '))
+        break
+    except ValueError:
+        print('ERROR: Dato incorrecto.')
+        print('Intente nuevamente.')
 
 conversion = celsius_a_fahrenheit(temp)
 
