@@ -1,6 +1,6 @@
 from funciones import opcion
 from administrador import menu_administrador
-from cliente import menu_cliente
+from cliente import menu_cliente, menu_producto
 
 print('---- BIENVEIDO AL SISTEMA ----')
 
@@ -29,5 +29,11 @@ while True:
 
 if resultado == 'Logeo exitoso cliente':
     menu_cliente()
+    a = int(input('-> '))
+    match a:
+        case 1:
+            menu_producto()
+            produc = int(input('Ingrese el numero del producto que desea comprar: '))
+
 elif resultado == 'Logeo exitoso administrador':
     menu_administrador()

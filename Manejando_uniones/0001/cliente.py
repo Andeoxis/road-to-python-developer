@@ -3,7 +3,7 @@ def menu_cliente():
     print('1. Producto')
     print('2. Salir')
 
-def menu():
+def menu_producto():
     print('Seleccione algun producto:')
     print('1. Huevo')
     print('2. Pollo')
