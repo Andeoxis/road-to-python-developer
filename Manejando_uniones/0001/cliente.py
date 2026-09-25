@@ -7,3 +7,4 @@ def menu_producto():
     print('Seleccione algun producto:')
     print('1. Huevo')
     print('2. Pollo')
+
